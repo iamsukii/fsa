@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://b4vt7sy40fam0"]
+
+[ext_resource type="Script" path="res://inv/inv_ui_slot.gd" id="1_0b7c6"]
+[ext_resource type="Texture2D" uid="uid://cwt6166uspr3h" path="res://Survi/inventory-slot.png" id="1_5po0i"]
+
+[node name="inv_UI_slot" type="Panel"]
+self_modulate = Color(1, 1, 1, 0)
+custom_minimum_size = Vector2(16, 16)
+offset_right = 16.0
+offset_bottom = 16.0
+script = ExtResource("1_0b7c6")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_5po0i")
+centered = false
+
+[node name="item_display" type="Sprite2D" parent="."]
